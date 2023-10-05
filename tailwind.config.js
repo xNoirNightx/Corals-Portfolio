@@ -37,7 +37,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
+        Indie_Flower: [`var(--font-Indie_Flower)`, 'sans-serif'],
       },
     },
   },
