@@ -1,4 +1,4 @@
-// icons from react-icons Heroicons 2
+// icons from react-icons
 import {
   HiHome,
   HiUser,
@@ -7,13 +7,18 @@ import {
   HiOutlineChatBubbleLeftEllipsis,
 } from 'react-icons/hi2';
 
+// import { 
+//   SiGamedeveloper 
+// } from 'react-icons/gi';   // this one is giving a ton of errors , coming back to it later 
+
 // nav data
 export const navData = [
-  {name: 'Home' , path: '/Home' , icon: <HiHome/>},
-  {name: 'About' , path: '/About' , icon: <HiUser/>},
-  {name: 'Skills' , path: '/Skills' , icon: <HiOutlineCodeBracket/>},
-  {name: 'Projects' , path: '/Projects' , icon: <HiOutlineRectangleGroup/>},
-  {name: 'Contact' , path: '/Contact' , icon: <HiOutlineChatBubbleLeftEllipsis/>},
+  { name: 'Home', path: '/Home', icon: <HiHome /> },
+  { name: 'About', path: '/About', icon: <HiUser /> },
+  { name: 'Skills', path: '/Skills', icon: <HiOutlineCodeBracket /> },
+  { name: 'Projects', path: '/Projects', icon: <HiOutlineRectangleGroup /> },
+  // { name: 'Game', path: '/Game', icon: <SiGamedeveloper /> }, // this one here gives major errors , coming back to it later 
+  { name: 'Contact', path: '/Contact', icon: <HiOutlineChatBubbleLeftEllipsis /> },
 ];
 
 // learning to add next for client nav between pages
