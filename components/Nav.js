@@ -4,12 +4,13 @@ import {
   HiUser,
   HiOutlineCodeBracket,
   HiOutlineRectangleGroup,
+  HiRocketLaunch,
   HiOutlineChatBubbleLeftEllipsis,
 } from 'react-icons/hi2';
 
 // import { 
 //   SiGamedeveloper 
-// } from 'react-icons/gi';   // this one is giving a ton of errors , coming back to it later 
+// } from 'react-icons/gi';   // this one is giving a ton of errors , coming back to it later rocket placeholder
 
 // nav data
 export const navData = [
@@ -17,7 +18,8 @@ export const navData = [
   { name: 'About', path: '/About', icon: <HiUser /> },
   { name: 'Skills', path: '/Skills', icon: <HiOutlineCodeBracket /> },
   { name: 'Projects', path: '/Projects', icon: <HiOutlineRectangleGroup /> },
-  // { name: 'Game', path: '/Game', icon: <SiGamedeveloper /> }, // this one here gives major errors , coming back to it later 
+  { name: 'Game', path: '/Game', icon: <HiRocketLaunch /> },
+  // { name: 'Game', path: '/Game', icon: <SiGamedeveloper /> },  //this one here gives major errors , coming back to it later rocket placeholder
   { name: 'Contact', path: '/Contact', icon: <HiOutlineChatBubbleLeftEllipsis /> },
 ];
 
@@ -36,7 +38,7 @@ const Nav = () => {
       {navData.map((link, index) => {
   return (
     <Link href={link.path} key={index}>
-      <div className="shadow-lg hover:shadow-outline-white transition-shadow p-2 rounded-full ml-[-0.35rem]">
+      <div className="shadow-lg hover:shadow-outline-white transition-shadow p-2 rounded-full ml-[-0.95rem]">
         {link.icon}
       </div>
     </Link>
