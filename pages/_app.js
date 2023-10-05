@@ -2,7 +2,7 @@ import '../styles/globals.css';
 
 // add componets here 
 import Layout from '../components/Layout';
-import { Transition from } from '../components/Transition';
+// import { Transition } from '../components/Transition';
 
 // routes here
 import {useRouter} from 'next/router'
@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
 <Layout>
-<AnimatePresence mode='popLayout'>
+{/* <AnimatePresence mode='popLayout'>
   <motion.div key={router.route} className='h-full'>
     <Transition/> 
      <Component {...pageProps} />;
-  </div>
-</AnimatePresence>
+</motion.div>
+</AnimatePresence> */}
 </Layout>
   );
 }
