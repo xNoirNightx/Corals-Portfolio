@@ -29,15 +29,16 @@ module.exports = {
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
         circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
+        tleft: 'url("/tleft.png")',
+        tright: 'url("/tright.png")',
+        bleft: 'url("/bleft.png")',
         site: 'url("/site-bg.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
-        Indie_Flower: [`var(--font-Indie_Flower)`, 'sans-serif'],
+        Indie: [`var(--font-Indie)`, 'cursive'],
       },
     },
   },
