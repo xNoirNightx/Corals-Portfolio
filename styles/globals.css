@@ -9,3 +9,21 @@
     @apply w-full h-screen overflow-hidden;
   }
 }
+
+.glow {
+  text-shadow: 0 0 15px #ffffff; 
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px transparent;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffff; 
+  }
+  100% {
+    text-shadow: 0 0 10px transparent;
+  }
+}
+.glow-animation {
+  animation: glow 3s infinite; 
+}
