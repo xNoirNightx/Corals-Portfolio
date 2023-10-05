@@ -14,7 +14,7 @@ import {
 
 // nav data
 export const navData = [
-  { name: 'Home', path: '/Home', icon: <HiHome /> },
+  { name: 'Home', path: '/', icon: <HiHome /> },
   { name: 'About', path: '/About', icon: <HiUser /> },
   { name: 'Skills', path: '/Skills', icon: <HiOutlineCodeBracket /> },
   { name: 'Projects', path: '/Projects', icon: <HiOutlineRectangleGroup /> },
