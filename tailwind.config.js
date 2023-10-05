@@ -25,6 +25,7 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
+        'outline-white': 'white', 
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
@@ -39,6 +40,9 @@ module.exports = {
       },
       fontFamily: {
         Indie: [`var(--font-Indie)`, 'cursive'],
+      },
+      boxShadow: {
+        'outline-blue': '0 0 10px white', 
       },
     },
   },
