@@ -10,6 +10,7 @@ import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Topleftimg from '../components/TopLeftImg';
 import TopRightImg from '../components/TopRightImg'; 
+import BottomLeftImg from '../components/BottomLeftImg';
 
 const Layout = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       <TopRightImg /> 
       <Nav />
       <Header />
+      <BottomLeftImg /> 
       {children}
     </div>
   );

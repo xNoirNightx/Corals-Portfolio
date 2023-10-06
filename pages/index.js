@@ -2,15 +2,14 @@ import Image from "next/image";
 
 // components import
 import ParticlesContainer from "../components/ParticlesContainer";
-import Resume from "../components/ResumeBtn";
 import Avatar from "../components/Avatar";
+import ResumeBtn from "../components/ResumeBtn";
 
 // framer
 import { motion } from "framer-motion";
 
 // effects
 import { fadeIn } from "../variants";
-import ResumeBtn from "../components/ResumeBtn";
 
 const Home = () => {
   return (
@@ -27,13 +26,17 @@ const Home = () => {
           </p>
           {/* resume */}
           <div className='flex justify-center xl:hidden relative'>
-            <ResumeBtn />
-          </div>
+          <ResumeBtn />
+           </div>
         </div>
       </div>
       <div>img</div>
     </div>
   );
 };
+
+<ParticlesContainer/>
+
+
 
 export default Home;
