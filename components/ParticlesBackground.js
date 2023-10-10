@@ -35,8 +35,8 @@ const ParticlesBackground = () => {
         enable: false, // Disable links between particles
       },
       shape: {
-        type: "circle", // Particle shape is a circle
-      },
+        type: "circle", // Particle shape is a circle 
+            },
       size: {
         value: 4, // Particle size
         random: true,
@@ -49,7 +49,7 @@ const ParticlesBackground = () => {
         random: true, // Enable random opacity
         animation: {
           enable: true,
-          speed: 0.5, // Adjust the speed as desired
+          speed: 1.5, // Adjust the speed as desired
           minimumValue: 0.1, // Minimum opacity during animation
           sync: false,
         },
