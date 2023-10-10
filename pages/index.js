@@ -22,8 +22,8 @@ const Home = () => {
             Into <span className="text-accent text-[#41809d]">Reality</span>
           </h1>
           <p className="text-white max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
-            amet elementum eros. Sed semper lacinia magna.
+          Welcome to my digital playground, where lines of code transform ideas into living, breathing creations. Explore the pixels that power the future, and journey through the endless possibilities of technology. Here, innovation meets imagination, and every keystroke is a step closer to crafting extraordinary experiences. 
+          Join me on this exciting adventure, where we turn dreams into digital reality, one line of code at a time.
           </p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
