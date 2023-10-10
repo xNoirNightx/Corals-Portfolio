@@ -5,8 +5,9 @@ import { HiDocumentText } from 'react-icons/hi2';
 
 const ResumeBtn = () => {
   const openResume = () => {
-    // Replace 'your_resume.png' with the actual path to your resume image
-    window.open('../public/resume.png', '_blank');
+
+    // resume 
+    window.open('/public/resume.png', '_blank');
   };
 
   return (

@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 // components import
-import ParticlesContainer from "../components/ParticlesContainer";
 import Avatar from "../components/Avatar";
 import ResumeBtn from "../components/ResumeBtn";
 
@@ -13,9 +12,11 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className='bg-primary/60 h-full'>
-      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
+    <div className='home'>
+      {/* text */}
+      <div className='black'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
+          {/* Replace the title and subtitle with your HTML */}
           <h1 className="h1">
             Coding <span className="text-accent text-[#41809d]">Dreams</span> <br />
             Into <span className="text-accent text-[#41809d]">Reality</span>
@@ -24,19 +25,41 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
             amet elementum eros. Sed semper lacinia magna.
           </p>
-          {/* resume */}
+          {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
-          <ResumeBtn />
-           </div>
+            <ResumeBtn />
+          </div>
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='hidden xl:flex'
+          >
+            <ResumeBtn />
+          </motion.div>
         </div>
       </div>
-      <div>img</div>
+      {/* image */}
+      <div className='w-[1200px] h-full absolute right-0 bottom-0'>
+        {/* bg img */}
+        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div>
+
+     
+        {/* avatar img */}
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
+        >
+          <Avatar />
+        </motion.div>
+      </div>
     </div>
   );
 };
-
-<ParticlesContainer/>
-
-
 
 export default Home;

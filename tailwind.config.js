@@ -32,7 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
+        circlestext: 'url("/circlestext.png")',
         tleft: 'url("/tleft.png")',
         tright: 'url("/tright.png")',
         bleft: 'url("/bleft.png")',
