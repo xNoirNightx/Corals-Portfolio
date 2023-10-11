@@ -90,7 +90,7 @@ import Avatar from '/components/Avatar';
                   exit='hidden'
                   className='h2 xl:mt-12'
                 >
-                  My Work <span className='text-accent'>.</span>
+                  My Projects <span className='text-accent'>.</span>
                 </motion.h2>
                 <motion.p
                   variants={fadeIn('up', 0.4)}
@@ -100,7 +100,7 @@ import Avatar from '/components/Avatar';
                   className='mb-4 max-w-[900px] mx-auto lg:mx-0'
                 >
                   Here are a few samples of my work through my coding journey.
-                  Feel free to click on the image to take you to the deployed site.
+                  Feel free to click on the image to take you to the deployed site.<br></br>
                   <br></br>
                   Or click on <FaGithub /> to take you to the code.
                 </motion.p>

@@ -19,13 +19,14 @@ const Layout = ({ children }) => {
     <div 
     className={`page bg-site text-white bg-cover bg-no-repeat ${Indie.variable} font-Indie relative`}
     >
-      <ParticlesBackground />
+      
       <Topleftimg />
       <TopRightImg /> 
       <Nav />
       <Header />
       <BottomLeftImg /> 
       <BottomRightImg />
+      <ParticlesBackground />
       {children}
     </div>
   );

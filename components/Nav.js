@@ -8,9 +8,7 @@ import {
   HiOutlineChatBubbleLeftEllipsis,
 } from 'react-icons/hi2';
 
-// import { 
-//   SiGamedeveloper 
-// } from 'react-icons/gi';   // this one is giving a ton of errors , coming back to it later rocket placeholder
+
 
 // nav data
 export const navData = [
@@ -19,7 +17,6 @@ export const navData = [
   { name: 'Skills', path: '/Skills', icon: <HiOutlineCodeBracket /> },
   { name: 'Projects', path: '/Projects', icon: <HiOutlineRectangleGroup /> },
   { name: 'Game', path: '/Game', icon: <HiRocketLaunch /> },
-  // { name: 'Game', path: '/Game', icon: <SiGamedeveloper /> },  //this one here gives major errors , coming back to it later rocket placeholder
   { name: 'Contact', path: '/Contact', icon: <HiOutlineChatBubbleLeftEllipsis /> },
 ];
 
