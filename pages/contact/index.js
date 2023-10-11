@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../../variants';
+import Avatar from "/components/Avatar"; // Import the Avatar component here
 
 const Contact = () => {
   return (
@@ -48,6 +49,17 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
+      {/* Add the Avatar section here with fade-in motion */}
+      <motion.div
+        variants={fadeIn('up', 0.6)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        className='flex justify-center'
+        style={{ marginTop: '-475px' }}
+      >
+        <Avatar />
+      </motion.div>
     </div>
   );
 };
