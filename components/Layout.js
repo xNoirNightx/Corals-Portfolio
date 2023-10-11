@@ -1,33 +1,35 @@
+import React, { lazy, Suspense } from 'react';
 import { Indie_Flower } from '@next/font/google';
-// fixed font not loading
+
 const Indie = Indie_Flower({
   subsets: ['latin'],
   variable: '--font-Indie',
   weight: ['400'],
 });
 
-import Nav from '../components/Nav';
-import Header from '../components/Header';
-import Topleftimg from '../components/TopLeftImg';
-import TopRightImg from '../components/TopRightImg'; 
-import BottomLeftImg from '../components/BottomLeftImg';
-import BottomRightImg from '../components/BottomRightImg';
-import ParticlesBackground from '../components/ParticlesBackground';
+const Nav = lazy(() => import('../components/Nav'));
+const Header = lazy(() => import('../components/Header'));
+const Topleftimg = lazy(() => import('../components/TopLeftImg'));
+const TopRightImg = lazy(() => import('../components/TopRightImg'));
+const BottomLeftImg = lazy(() => import('../components/BottomLeftImg'));
+const BottomRightImg = lazy(() => import('../components/BottomRightImg'));
+const ParticlesBackground = lazy(() => import('../components/ParticlesBackground'));
 
 const Layout = ({ children }) => {
   return (
     <div 
     className={`page bg-site text-white bg-cover bg-no-repeat ${Indie.variable} font-Indie relative`}
     >
-      
-      <Topleftimg />
-      <TopRightImg /> 
-      <Nav />
-      <Header />
-      <BottomLeftImg /> 
-      <BottomRightImg />
-      <ParticlesBackground />
-      {children}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Topleftimg />
+        <TopRightImg /> 
+        <Nav />
+        <Header />
+        <BottomLeftImg /> 
+        <BottomRightImg />
+        <ParticlesBackground />
+        {children}
+      </Suspense>
     </div>
   );
 };
