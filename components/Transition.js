@@ -9,7 +9,7 @@ const transitionVariants = {
   animate: {
     x: '0%',
     width: '0%',
-    opacity: 1,
+    opacity: 0,
     transition: {
       delay: 0.2,
       duration: 0.6,

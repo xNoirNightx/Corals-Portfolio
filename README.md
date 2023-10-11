@@ -23,8 +23,13 @@ The following image shows the web application after I edited the code.
 
 Phone screen capture ( Samsung S23 Ultra )
 
-![Corals Portfolio.]()
-![Corals Portfolio.]()
+![Corals Portfolio.](/public/readme/screen1.png)
+![Corals Portfolio.](/public/readme/screen2.png)
+![Corals Portfolio.](/public/readme/screen3.png)
+![Corals Portfolio.](/public/readme/screen4.png)
+![Corals Portfolio.](/public/readme/screen5.png)
+![Corals Portfolio.](/public/readme/screen6.png)
+
 
 ## Credits - I used alot of websites and videos I will try to link everything as I go.
 - [React Icons](https://react-icons.github.io/react-icons/icons?name=hi2)
