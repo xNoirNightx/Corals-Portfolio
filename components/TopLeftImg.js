@@ -1,11 +1,11 @@
 import Image from "next/image";
+import TopLeftImgSrc from "/public/tleft.png";
 
-//  left image adjustments here , img increases size with screen size
 const TopLeftImg = () => {
   return (
-  <div className='absolute  left-0 top-0 z-10 w-[400px] xl:w-[600px] opacity-50'>
-    <Image src='/tleft.png' width={700} height={700} alt=''/>
-  </div>
+    <div className='absolute  left-0 top-0 z-10 w-[400px] xl:w-[600px] opacity-50'>
+      <Image src={TopLeftImgSrc} width={700} height={700} alt='' />
+    </div>
   );
 };
 

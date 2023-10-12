@@ -12,7 +12,7 @@ const Header = lazy(() => import('../components/Header'));
 const Topleftimg = lazy(() => import('../components/TopLeftImg'));
 const TopRightImg = lazy(() => import('../components/TopRightImg'));
 const BottomLeftImg = lazy(() => import('../components/BottomLeftImg'));
-const BottomRightImg = lazy(() => import('../components/BottomRightImg'));
+const Explosion = lazy(() => import('../components/BottomRightImg'));
 const ParticlesBackground = lazy(() => import('../components/ParticlesBackground'));
 
 const Layout = ({ children }) => {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         <Nav />
         <Header />
         <BottomLeftImg /> 
-        <BottomRightImg />
+        <Explosion />
         <ParticlesBackground />
         {children}
       </Suspense>
