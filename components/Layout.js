@@ -7,13 +7,13 @@ const Indie = Indie_Flower({
   weight: ['400'],
 });
 
-const Nav = lazy(() => import('../components/Nav'));
-const Header = lazy(() => import('../components/Header'));
-const Topleftimg = lazy(() => import('../components/TopLeftImg'));
-const TopRightImg = lazy(() => import('../components/TopRightImg'));
-const BottomLeftImg = lazy(() => import('../components/BottomLeftImg'));
-const Explosion = lazy(() => import('../components/BottomRightImg'));
-const ParticlesBackground = lazy(() => import('../components/ParticlesBackground'));
+const Nav = lazy(() => import('./Nav'));
+const Header = lazy(() => import('./Header'));
+const Topleftimg = lazy(() => import('./TopLeftImg'));
+const TopRightImg = lazy(() => import('./TopRightImg'));
+const BottomLeftImg = lazy(() => import('./BottomleftImg'));
+const BottomRightImG = lazy(() => import('./BottomRightImg'));
+const ParticlesBackground = lazy(() => import('./ParticlesBackground'));
 
 const Layout = ({ children }) => {
   return (
@@ -23,10 +23,10 @@ const Layout = ({ children }) => {
       <Suspense fallback={<div>Loading...</div>}>
         <Topleftimg />
         <TopRightImg /> 
+        <BottomLeftImg /> 
         <Nav />
         <Header />
-        <BottomLeftImg /> 
-        <Explosion />
+        <BottomRightImG />
         <ParticlesBackground />
         {children}
       </Suspense>
