@@ -57,9 +57,9 @@ import Avatar from '/components/Avatar';
     },
     {
       name: 'Project 9',
-      imgSrc: '/soon.png',
-      githubLink: 'https://github.com/yourusername/project2',
-      deployedLink: 'https://project2-demo.com',
+      imgSrc: '/cyberscript.png',
+      githubLink: 'https://github.com/xNoirNightx/CyberScript',
+      deployedLink: 'https://cyberscript-66546257c421.herokuapp.com/',
     },
     // Add more projects as needed
   ];
